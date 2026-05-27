@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <title>Firestore Seed</title>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+</head>
+<body>
+    <h1>Seeder produkter til Firestore...</h1>
+    <ul id="log"></ul>
+
+    <script>
+        // ===== ERSTAT DETTE MED DIN EGEN FIREBASE CONFIG =====
+        const firebaseConfig = {
+            apiKey: "AIzaSyCKK3MMvMvnxqQT0_WQaI_E2UNqQORoyew",
+            authDomain: "slice-management.firebaseapp.com",
+            projectId: "slice-management",
+            storageBucket: "slice-management.firebasestorage.app",
+            messagingSenderId: "794651155947",
+            appId: "794651155947",
+            measurementId: "G-FEQ0Y43RG8"
+
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+
+        // ===== ERSTAT DETTE MED INDHOLDET AF DIN products.json =====
+        const products = [
+  {
+    "name": "Caputo Pizzeria 00",
+    "slug": "caputo-pizzeria-00",
+    "shortDescription": "Italiensk tipo 00 mel til napolitansk pizza",
+    "description": "Finmalet pizzamel fra Caputo velegnet til højhydrationsdeje og ægte napolitansk pizza. Perfekt til hjemmeovn og pizzaovn.",
+    "price": 39.95,
+    "category": "råvarer",
+    "subcategory": "mel",
+    "imageUrl": "/assets/images/caputo-00.jpg",
+    "inStock": true,
+    "stockQuantity": 24,
+    "unit": "1 kg",
+    "brand": "Caputo"
+  },
+  {
+    "name": "San Marzano tomater",
+    "slug": "san-marzano-tomater",
+    "shortDescription": "DOP San Marzano tomater fra Campania",
+    "description": "Autentiske San Marzano DOP hele flåede tomater. Den eneste rigtige tomat til napolitansk pizzasauce.",
+    "price": 29.95,
+    "category": "råvarer",
+    "subcategory": "tomatsauce",
+    "imageUrl": "/assets/images/san-marzano.jpg",
+    "inStock": true,
+    "stockQuantity": 42,
+    "unit": "400 g",
+    "brand": "Mutti"
+  },
+  {
+    "name": "Fior di Latte mozzarella",
+    "slug": "fior-di-latte-mozzarella",
+    "shortDescription": "Frisk komælksmozzarella til pizza",
+    "description": "Fior di Latte er den foretrukne mozzarella til napolitansk pizza. Smelter perfekt og giver en cremet konsistens.",
+    "price": 34.95,
+    "category": "råvarer",
+    "subcategory": "ost",
+    "imageUrl": "/assets/images/fior-di-latte.jpg",
+    "inStock": true,
+    "stockQuantity": 18,
+    "unit": "250 g",
+    "brand": "Galbani"
+  },
+  {
+    "name": "Tørgær",
+    "slug": "toergaer",
+    "shortDescription": "Tørgær til pizzadej",
+    "description": "Tørgær af høj kvalitet til pizzadej. Giver en stabil og forudsigelig hævning. Velegnet til kolde hævning.",
+    "price": 14.95,
+    "category": "råvarer",
+    "subcategory": "gær",
+    "imageUrl": "/assets/images/toergaer.jpg",
+    "inStock": true,
+    "stockQuantity": 60,
+    "unit": "125 g",
+    "brand": "Malteserkors"
+  },
+  {
+    "name": "Pizzasten cordierite",
+    "slug": "pizzasten-cordierite",
+    "shortDescription": "Cordierite pizzasten til sprød bund",
+    "description": "Rektangulær pizzasten i cordierite, der tåler ekstremt høje temperaturer. Giver en sprød og jævn bagt bund.",
+    "price": 299.95,
+    "category": "udstyr",
+    "subcategory": "pizzasten",
+    "imageUrl": "/assets/images/pizzasten.jpg",
+    "inStock": true,
+    "stockQuantity": 8,
+    "unit": "1 stk",
+    "brand": "Limet"
+  },
+  {
+    "name": "Pizzaspade aluminium",
+    "slug": "pizzaspade-aluminium",
+    "shortDescription": "Professionel pizzaspade i aluminium",
+    "description": "Let og holdbar pizzaspade i anodiseret aluminium. Perfekt til at skyde pizzaer ind og ud af ovnen.",
+    "price": 249.95,
+    "category": "udstyr",
+    "subcategory": "spader",
+    "imageUrl": "/assets/images/pizzaspade.jpg",
+    "inStock": false,
+    "stockQuantity": 0,
+    "unit": "1 stk",
+    "brand": "Limet"
+  },
+  {
+    "name": "Infrarødt termometer",
+    "slug": "infraroedt-termometer",
+    "shortDescription": "IR-termometer til måling af ovnens overflade",
+    "description": "Mål overfladetemperaturen på din pizzasten præcist. Sikrer perfekt bagetemperatur hver gang.",
+    "price": 179.95,
+    "category": "udstyr",
+    "subcategory": "termometre",
+    "imageUrl": "/assets/images/termometer.jpg",
+    "inStock": true,
+    "stockQuantity": 14,
+    "unit": "1 stk",
+    "brand": "ThermoPro"
+  },
+  {
+    "name": "Dejskraber plast",
+    "slug": "dejskraber-plast",
+    "shortDescription": "Fleksibel dejskraber til pizzadej",
+    "description": "Fleksibel dejskraber i BPA-fri plast. Perfekt til at arbejde med våde pizzadeje og rense skåle.",
+    "price": 19.95,
+    "category": "udstyr",
+    "subcategory": "dejværktøj",
+    "imageUrl": "/assets/images/dejskraber.jpg",
+    "inStock": true,
+    "stockQuantity": 30,
+    "unit": "1 stk",
+    "brand": "KitchenCraft"
+  }
+];
+
+        const logList = document.getElementById("log");
+
+        function log(message) {
+            const li = document.createElement("li");
+            li.textContent = message;
+            logList.appendChild(li);
+        }
+
+        async function seedProducts() {
+            for (const product of products) {
+                try {
+                    const docRef = await db.collection("products").add({
+                        ...product,
+                        createdAt: new Date()
+                    });
+                    log(`✅ Tilføjet: ${product.name}`);
+                } catch (error) {
+                    log(`❌ Fejl med ${product.name}: ${error.message}`);
+                }
+            }
+            log("✅ Færdig med seeding!");
+        }
+
+        seedProducts();
+    </script>
+</body>
+</html>
