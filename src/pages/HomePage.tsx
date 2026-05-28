@@ -1,91 +1,144 @@
-// HOME PAGE (default export)
+import "./HomePage.css";
+
 export default function HomePage() {
   return (
-    <>
-      <HeroSection />
-      <FeaturesSection />
-      <ProductsSection />
-      <RecipesSection />
-    </>
-  );
-}
+    <div>
 
-// HERO
-function HeroSection() {
-  return (
-    <section className="w-full h-96 md:h-screen bg-black">
-      <img
-        src="/images/hero-ovens.jpg"
-        alt="Pizzaovne"
-        className="w-full h-full object-cover"
-      />
-    </section>
-  );
-}
-
-// FEATURES
-function FeaturesSection() {
-  return (
-    <section className="bg-[#ebe7df] py-12 border-t-4 border-[#6b8d7c]">
-      <div className="max-w-6xl mx-auto grid grid-cols-3 gap-12 text-center px-4">
-        <div>
-          <p className="text-xs font-bold mb-1">FRI FRAGT TIL PAKKESHOP</p>
-          <p className="text-xs text-gray-600">ALLE ORDRER OVER 499 DKK</p>
-        </div>
-        <div>
-          <p className="text-xs font-bold mb-1">KUNDESERVICE 8-17</p>
-          <p className="text-xs text-gray-600">ALLE HVERDAGE</p>
-        </div>
-        <div>
-          <p className="text-xs font-bold mb-1">STORT UDVALG</p>
-          <p className="text-xs text-gray-600">RÅVARER & GEAR</p>
-        </div>
+      {/* TOPBAR */}
+      <div className="topbar">
+        Fri fragt ved køb over 499 kr | Kundeservice: Alle dage 08:00 - 17:00 | Tlf: 12 34 56 78
       </div>
-    </section>
-  );
-}
 
-// PRODUCTS
-function ProductsSection() {
-  const products = [
-    { name: "FIOR DI LATTE", brand: "Latteria Sorrentina", price: "219,00 KR." },
-    { name: "NUVOLA SUPER", brand: "Caputo", price: "129,00 KR." },
-    { name: "SAN MARZANO", brand: "Solania", price: "FRA 29,00 KR." },
-    { name: "PIZZASPADE", brand: "Enzo", price: "FRA 429,00 KR." },
-  ];
+      {/* NAVBAR */}
+      <div className="navbar">
+        <div className="container nav-inner">
+          <div className="logo">LOGO</div>
 
-  return (
-    <section className="bg-[#ebe7df] py-16">
-      <h2 className="text-center text-xs font-bold tracking-wider mb-12 uppercase">Populære produkter</h2>
-      <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 px-4">
-        {products.map((p, i) => (
-          <div key={i} className="text-center">
-            <div className="bg-white h-40 mb-3"></div>
-            <p className="text-xs font-bold uppercase">{p.name}</p>
-            <p className="text-xs text-gray-600 mb-2">{p.brand}</p>
-            <p className="text-xs font-medium">{p.price}</p>
+          <div className="nav-links">
+            <a>SHOP</a>
+            <a>OPSKRIFTER</a>
+            <a>OM OS</a>
+            <a>KONTAKT</a>
           </div>
-        ))}
-      </div>
-    </section>
-  );
-}
 
-// RECIPES
-function RecipesSection() {
-  const recipes = ["Marinara", "Quattro Formaggi", "Diavola", "Capricciosa", "Salsiccia e Friarielli", "Margarita"];
-
-  return (
-    <section className="bg-[#ebe7df] py-16 text-center">
-      <h2 className="text-xs font-bold tracking-wider mb-6 uppercase">Pizzaopskrifter</h2>
-      <div className="w-12 h-px bg-black mx-auto mb-8"></div>
-      <div className="max-w-3xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-4 px-4">
-        {recipes.map((r, i) => (
-          <a key={i} href={`/recipes`} className="text-xs uppercase hover:text-[#6b8d7c]">
-            {r}
-          </a>
-        ))}
+          <div className="nav-actions">
+            <span>🔍 SØG</span>
+            <span>🛒</span>
+          </div>
+        </div>
       </div>
-    </section>
+
+      {/* HERO */}
+      <div className="hero">
+        <img
+          src="https://images.unsplash.com/photo-1556909212-d5b604d0fa4d"
+          alt="Pizzaovne"
+        />
+      </div>
+
+      {/* FEATURE BAR */}
+      <div className="features">
+        <div className="container feature-inner">
+
+          <div className="feature">
+            <strong>FRI FRAGT TIL PAKKESHOP</strong>
+            <span>ALLE ORDRER OVER 499 DKK</span>
+          </div>
+
+          <div className="feature">
+            <strong>KUNDESERVICE 8-17</strong>
+            <span>ALLE HVERDAGE</span>
+          </div>
+
+          <div className="feature">
+            <strong>STORT UDVALG</strong>
+            <span>RÅVARER & GEAR</span>
+          </div>
+
+        </div>
+      </div>
+
+      {/* PRODUCTS */}
+      <div className="container products">
+        <h2>POPULÆRE PRODUKTER</h2>
+
+        <div className="product-grid">
+
+          <div className="product">
+            <img src="https://via.placeholder.com/200" />
+            <p className="title">FIOR DI LATTE</p>
+            <p>Latteria Sorrentina</p>
+            <p className="price">219,00 KR.</p>
+          </div>
+
+          <div className="product">
+            <img src="https://via.placeholder.com/200" />
+            <p className="title">NUVOLA SUPER</p>
+            <p>Caputo</p>
+            <p className="price">129,00 KR.</p>
+          </div>
+
+          <div className="product">
+            <img src="https://via.placeholder.com/200" />
+            <p className="title">SAN MARZANO</p>
+            <p>Solania</p>
+            <p className="price">FRA 29,00 KR.</p>
+          </div>
+
+          <div className="product">
+            <img src="https://via.placeholder.com/200" />
+            <p className="title">PIZZASPADE</p>
+            <p>Enzo</p>
+            <p className="price">FRA 429,00 KR.</p>
+          </div>
+
+        </div>
+      </div>
+
+      {/* RECIPES */}
+      <div className="container recipes">
+        <h2>PIZZAOPSKRIFTER</h2>
+        <div className="divider"></div>
+
+        <div className="recipe-grid">
+          <span>MARINARA</span>
+          <span>QUATTRO FORMAGGI</span>
+          <span>DIAVOLA</span>
+
+          <span>CAPRICCIOSA</span>
+          <span>SALSICCIA E FRIARIELLI</span>
+          <span>MARGARITA</span>
+        </div>
+      </div>
+
+      {/* FOOTER */}
+      <div className="footer">
+        <div className="container footer-inner">
+
+          <div>
+            <h4>SLICE-MANAGEMENT</h4>
+            <p>Fibigerstræde 15</p>
+            <p>9000 Aalborg</p>
+            <p>CVR: 09876543</p>
+          </div>
+
+          <div>
+            <h4>KUNDESERVICE</h4>
+            <p>MAN - FRE: 08:00–17:00</p>
+            <p>TLF: (+45) 12 34 56 78</p>
+            <p>support@slice-management.dk</p>
+          </div>
+
+          <div>
+            <h4>INFORMATION</h4>
+            <p>OM OS</p>
+            <p>JOBS</p>
+            <p>BETINGELSER</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
   );
 }
