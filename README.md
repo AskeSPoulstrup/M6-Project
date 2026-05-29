@@ -1,73 +1,65 @@
-# React + TypeScript + Vite
+# Slice-Management
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Slice-Management er en B2C webshop målrettet pizzanørder, der sælger råvarer, udstyr og værktøj til seriøs pizzabagning. Projektet er udviklet som en del af faget IT-Ledelse, 8. semester, M6: Design af IT-baserede systemer.
 
-Currently, two official plugins are available:
+Formålet med projektet er ikke kun at udvikle en fungerende hjemmeside, men især at demonstrere en struktureret udviklingsproces med fokus på design, samarbejde, dokumentation og versionsstyring gennem Git og GitHub.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Formål
 
-## React Compiler
+Projektets formål er at designe og udvikle en simpel webshop med databaseintegration, hvor brugeren kan:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- se featured produkter på forsiden
+- browse produkter dynamisk fra database
+- filtrere produkter efter kategori
+- se produktdetaljer
+- tilføje produkter til kurven
+- gennemføre en bestilling
+- få vist en ordrebekræftelse
+- finde kontaktinformation og information om virksomheden
 
-## Expanding the ESLint configuration
+Samtidig fungerer systemet som case for at arbejde med:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- projektstyring
+- designprocesser
+- UML og anden dokumentation
+- GitHub som samarbejds- og versionsstyringsværktøj
+- opgavestyring via Kanban board
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Teknologier
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Projektet udvikles med følgende teknologier:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- React
+- TypeScript
+- Vite
+- Firebase / Firestore
+- CSS
+- Git & GitHub
+- GitHub Projects
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Funktionalitet
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+De vigtigste funktioner i systemet er:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Forside med stærkt visuelt udtryk
+- Featured produkter hentet fra database
+- Produktkatalog med filtrering
+- Produktdetaljeside
+- Kurv med løbende totalpris
+- Checkout med kundeinformation
+- Ordregemning i Firebase
+- Bekræftelsesside med ordreopsummering
+- Kontakt-side
+- Om os-side
+
+## Projektets fokus
+
+I denne opgave er fokus primært på processen frem for det færdige produkt. Derfor lægges der vægt på:
+
+- planlægning
+- rollefordeling
+- samarbejde i GitHub
+- branches, commits og merges
+- dokumentation
+- designmodeller
+- refleksion over arbejdsprocessen
