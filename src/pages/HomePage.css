@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #F5F2ED;
+  color: #222;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* TOPBAR */
+.topbar {
+  background: #6E8F7A;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #F5F2ED;
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 20px;
+}
+
+/* HERO */
+.hero img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+
+/* FEATURES */
+.features {
+  background: #EDEBE6;
+  border-top: 5px solid #6E8F7A;
+  border-bottom: 5px solid #6E8F7A;
+}
+
+.feature-inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* PRODUCTS */
+.products {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.product img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.price {
+  font-weight: bold;
+}
+
+/* RECIPES */
+.recipes {
+  text-align: center;
+  padding: 70px 0;
+}
+
+.divider {
+  width: 120px;
+  height: 2px;
+  background: black;
+  margin: 10px auto 40px;
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.recipe-grid span {
+  cursor: pointer;
+}
+
+.recipe-grid span:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+.footer {
+  background: #6E8F7A;
+  color: white;
+  margin-top: 60px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0;
+}
+
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .feature-inner {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .recipe-grid {
+    grid-template-columns: 1fr;
+  }
+}
