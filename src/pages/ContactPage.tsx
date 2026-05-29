@@ -1,10 +1,42 @@
-import SectionTitle from '../components/common/SectionTitle'
-
 export default function ContactPage() {
   return (
-    <section>
-      <SectionTitle title="Contact" subtitle="Contact page placeholder." />
-      <p>Contact form and store details go here.</p>
+    <section className="content-page">
+      <div className="catalog-hero">
+        <p className="eyebrow">Kontakt</p>
+        <h1>Kontakt os</h1>
+        <p>
+          Vi er klar til at hjaelpe dig med spoergsmaal om produkter, ordrer og levering.
+          Skriv til os eller ring - vi svarer inden for 24 timer paa hverdage.
+        </p>
+      </div>
+
+      <div className="contact-grid">
+        <div className="contact-card">
+          <p className="contact-card__icon" aria-hidden="true">📍</p>
+          <h2>Adresse</h2>
+          <p>Pizzagade 12</p>
+          <p>2100 Koebenhavn Oe</p>
+          <p>Danmark</p>
+        </div>
+
+        <div className="contact-card">
+          <p className="contact-card__icon" aria-hidden="true">✉️</p>
+          <h2>E-mail</h2>
+          <p>
+            <a href="mailto:info@slice-management.dk">info@slice-management.dk</a>
+          </p>
+          <p className="contact-card__note">Vi svarer inden for 24 timer</p>
+        </div>
+
+        <div className="contact-card">
+          <p className="contact-card__icon" aria-hidden="true">📞</p>
+          <h2>Telefon</h2>
+          <p>
+            <a href="tel:+4570201010">+45 70 20 10 10</a>
+          </p>
+          <p className="contact-card__note">Mandag-fredag 8-17</p>
+        </div>
+      </div>
     </section>
   )
 }

@@ -1,7 +1,7 @@
 import { createContext } from 'react'
 import type { Product } from '../types/product'
 
-type CartItem = {
+export type CartItem = {
   product: Product
   quantity: number
 }
@@ -11,6 +11,7 @@ export type CartContextValue = {
   itemCount: number
   subtotal: number
   addToCart: (product: Product, quantity?: number) => void
+  updateQuantity: (productId: string, quantity: number) => void
   removeFromCart: (productId: string) => void
   clearCart: () => void
 }

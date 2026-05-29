@@ -7,7 +7,15 @@ type ProductListProps = {
 
 export default function ProductList({ products }: ProductListProps) {
   if (products.length === 0) {
-    return <p>No products yet. Firebase data will appear here.</p>
+    return (
+      <div className="catalog-state catalog-state--empty">
+        <p>No products found yet.</p>
+        <span>
+          Connect Firebase and add documents to the <strong>products</strong>
+          collection to populate this grid.
+        </span>
+      </div>
+    )
   }
 
   return (

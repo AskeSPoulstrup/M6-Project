@@ -1,0 +1,188 @@
+[
+  {
+    "title": "Margherita",
+    "slug": "margherita",
+    "description": "Den klassiske napolitanske pizza. Enkel, ren og perfekt — tomatsauce, fior di latte og frisk basilikum.",
+    "prepTimeMinutes": 20,
+    "bakeTimeMinutes": 90,
+    "servings": 4,
+    "ingredients": [
+      "500 g Caputo Pizzeria 00 mel",
+      "325 ml vand (65% hydrering)",
+      "10 g salt",
+      "3 g tørgær",
+      "400 g San Marzano DOP tomater",
+      "250 g Fior di Latte mozzarella",
+      "Frisk basilikum",
+      "Extra virgin olivenolie"
+    ],
+    "instructions": [
+      "Opløs gæren i lunkent vand og lad det stå 5 minutter.",
+      "Bland mel og salt i en skål. Tilsæt vandgær-blandingen lidt ad gangen og ælt til en glat dej — ca. 10 minutter.",
+      "Form dejen til en kugle, læg den i en oliebestrøget skål og dæk med folie. Hæv i køleskab i minimum 24 timer (op til 72 timer for optimal smag).",
+      "Tag dejen ud 2 timer før bagning og del den i 4 portioner á ca. 200 g. Form til boller og lad hæve dækket ved stuetemperatur.",
+      "Forvarm ovn til maksimal temperatur (250–300°C) med pizzasten i minimum 45 minutter.",
+      "Knus San Marzano tomaterne i hånden og krydr med salt og en smule olivenolie.",
+      "Stræk en dejbolle forsigtigt ud til ca. 30 cm på en meldækket overflade. Brug fingerspidserne, ikke kagerullen.",
+      "Fordel tomatsauce i tynde lag ud til kanten. Placer mozzarella i stykker.",
+      "Skyd pizza ind i ovnen og bag 6–8 minutter til bunden er leopardet og osten bobler.",
+      "Tag ud, top med friske basilikumblade og dryp med god olivenolie. Servér straks."
+    ]
+  },
+  {
+    "title": "Quattro Formaggi",
+    "slug": "quattro-formaggi",
+    "description": "Fire oste i perfekt harmoni — Fior di Latte, Gorgonzola, Parmigiano og Pecorino. Righoldig og intens.",
+    "prepTimeMinutes": 20,
+    "bakeTimeMinutes": 90,
+    "servings": 4,
+    "ingredients": [
+      "500 g Caputo Pizzeria 00 mel",
+      "325 ml vand",
+      "10 g salt",
+      "3 g tørgær",
+      "200 g Fior di Latte mozzarella",
+      "100 g Gorgonzola dolce",
+      "50 g revet Parmigiano Reggiano",
+      "50 g revet Pecorino Romano",
+      "Extra virgin olivenolie",
+      "Friskkværnet sort peber"
+    ],
+    "instructions": [
+      "Forbered pizzadej som beskrevet i Margherita-opskriften og hæv i køleskab 24–48 timer.",
+      "Tag dejen ud 2 timer inden bagning og del i 4 portioner. Form til boller.",
+      "Forvarm ovn til maksimal temperatur med pizzasten i 45 minutter.",
+      "Stræk dejbolle ud til ca. 28 cm.",
+      "Pensl dejen med en smule olivenolie. Ingen tomatsauce på denne pizza.",
+      "Fordel Fior di Latte og Gorgonzola i stykker over dejen.",
+      "Drys Parmigiano og Pecorino over.",
+      "Bag 6–8 minutter til bunden er gylden og osten er smeltet og let brunet.",
+      "Kværn sort peber over og servér med det samme."
+    ]
+  },
+  {
+    "title": "Diavola",
+    "slug": "diavola",
+    "description": "Den skarpe pizza med krydret 'nduja-salami og chili. For dem der kan lide det varmt.",
+    "prepTimeMinutes": 20,
+    "bakeTimeMinutes": 90,
+    "servings": 4,
+    "ingredients": [
+      "500 g Caputo Pizzeria 00 mel",
+      "325 ml vand",
+      "10 g salt",
+      "3 g tørgær",
+      "400 g San Marzano tomater",
+      "250 g Fior di Latte mozzarella",
+      "150 g 'Nduja (krydret spredepølse)",
+      "1 rød chili, i tynde skiver",
+      "Extra virgin olivenolie",
+      "Frisk oregano"
+    ],
+    "instructions": [
+      "Forbered pizzadej og hæv i køleskab 24–72 timer.",
+      "Tag dejen ud 2 timer inden bagning. Forvarm ovn med pizzasten i 45 minutter.",
+      "Knus San Marzano tomaterne og krydr med salt.",
+      "Stræk dejbolle ud til ca. 30 cm.",
+      "Fordel tomatsauce jævnt. Placer mozzarella i stykker.",
+      "Placer klatter af 'Nduja over pizzaen.",
+      "Tilsæt chili-skiver efter smag.",
+      "Bag 6–8 minutter til bunden er mørk og sprød og 'Nduja er smeltet.",
+      "Top med frisk oregano og olivenolie ved servering."
+    ]
+  },
+  {
+    "title": "Capricciosa",
+    "slug": "capricciosa",
+    "description": "Den fyldige klassiker med kogt skinke, champignon og artiskokker. Altid et hit.",
+    "prepTimeMinutes": 25,
+    "bakeTimeMinutes": 90,
+    "servings": 4,
+    "ingredients": [
+      "500 g Caputo Pizzeria 00 mel",
+      "325 ml vand",
+      "10 g salt",
+      "3 g tørgær",
+      "400 g San Marzano tomater",
+      "250 g Fior di Latte mozzarella",
+      "150 g kogt skinke, i strimler",
+      "200 g champignon, i skiver",
+      "1 dåse artiskokhjerter, afdryppet",
+      "Oliven efter smag",
+      "Extra virgin olivenolie",
+      "Frisk basilikum"
+    ],
+    "instructions": [
+      "Forbered pizzadej og hæv i køleskab 24–48 timer.",
+      "Steg champignonerne hurtigt i en tør pande ved høj varme for at fjerne fugt.",
+      "Tag dejen ud 2 timer inden bagning. Forvarm ovn med pizzasten i 45 minutter.",
+      "Knus San Marzano tomaterne og krydr med salt.",
+      "Stræk dejbolle ud til ca. 30 cm.",
+      "Fordel tomatsauce og mozzarella.",
+      "Fordel skinke, champignon, artiskokhjerter og oliven.",
+      "Dryp med olivenolie og bag 7–9 minutter.",
+      "Top med frisk basilikum ved servering."
+    ]
+  },
+  {
+    "title": "Marinara",
+    "slug": "marinara",
+    "description": "Den ældste napolitanske pizza — ingen ost, blot tomat, hvidløg og oregano. Simpel og fantastisk.",
+    "prepTimeMinutes": 15,
+    "bakeTimeMinutes": 90,
+    "servings": 4,
+    "ingredients": [
+      "500 g Caputo Pizzeria 00 mel",
+      "325 ml vand",
+      "10 g salt",
+      "3 g tørgær",
+      "400 g San Marzano tomater",
+      "4 fed hvidløg, i tynde skiver",
+      "2 tsk tørret oregano",
+      "Extra virgin olivenolie",
+      "Flagesalt"
+    ],
+    "instructions": [
+      "Forbered pizzadej og hæv i køleskab 24–72 timer.",
+      "Tag dejen ud 2 timer inden bagning. Forvarm ovn med pizzasten i 45 minutter.",
+      "Knus San Marzano tomaterne groft med hænderne og krydr med salt.",
+      "Stræk dejbolle ud til ca. 30 cm.",
+      "Fordel tomatsauce generøst over dejen.",
+      "Placer hvidløgsskiver jævnt fordelt over tomaterne.",
+      "Drys tørret oregano over og dryp med god olivenolie.",
+      "Bag 5–7 minutter til kanten er puffet og bunden er sprød.",
+      "Drys lidt flagesalt over og servér straks."
+    ]
+  },
+  {
+    "title": "Salsiccia e Friarielli",
+    "slug": "salsiccia-e-friarielli",
+    "description": "Napolitansk specialitet med krydret pølse og stegt broccoli rabe. Stærk smag og dejlig tekstur.",
+    "prepTimeMinutes": 30,
+    "bakeTimeMinutes": 90,
+    "servings": 4,
+    "ingredients": [
+      "500 g Caputo Pizzeria 00 mel",
+      "325 ml vand",
+      "10 g salt",
+      "3 g tørgær",
+      "250 g Fior di Latte mozzarella",
+      "300 g frisk italiensk pølse (salsiccia)",
+      "300 g broccoli rabe (cime di rapa)",
+      "3 fed hvidløg",
+      "Chili flager",
+      "Extra virgin olivenolie"
+    ],
+    "instructions": [
+      "Forbered pizzadej og hæv i køleskab 24–48 timer.",
+      "Blancher broccoli rabe i kogende saltvand i 2 minutter, dræn og steg i olivenolie med hvidløg og chili flager til al fugt er fordampet.",
+      "Tag skindet af salsiccia og knus i stykker.",
+      "Tag dejen ud 2 timer inden bagning. Forvarm ovn med pizzasten i 45 minutter.",
+      "Stræk dejbolle ud til ca. 28 cm.",
+      "Fordel mozzarella over dejen. Ingen tomatsauce på denne pizza.",
+      "Fordel broccoli rabe og klatter af salsiccia over.",
+      "Dryp med olivenolie og bag 7–9 minutter til pølsen er brunet.",
+      "Servér med friske chili flager og ekstra olivenolie."
+    ]
+  }
+]
