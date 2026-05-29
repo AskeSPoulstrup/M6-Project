@@ -1,35 +1,37 @@
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { type Recipe } from '../../types/recipe'
-
-const recipes: Recipe[] = [
-  {
-    id: 'recipe-1',
-    title: 'Neapolitan starter dough',
-    slug: 'neapolitan-starter-dough',
-    description: 'Placeholder recipe teaser for the homepage.',
-    instructions: [],
-    ingredients: [],
-    prepTimeMinutes: 20,
-    bakeTimeMinutes: 90,
-    servings: 4,
-  },
-]
+import { getRecipes } from '../../services/recipeService'
+import type { Recipe } from '../../types/recipe'
 
 export default function RecipesSection() {
+  const [recipes, setRecipes] = useState<Recipe[]>([])
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    let active = true
+    getRecipes()
+      .then((result) => { if (active) setRecipes(result.slice(0, 6)) })
+      .finally(() => { if (active) setLoading(false) })
+    return () => { active = false }
+  }, [])
+
+  if (loading || recipes.length === 0) return null
+
   return (
-    <section className="home-section">
-      <div>
-        <h2>Recipes</h2>
-        <p>Recipe previews that later point into the CMS-like Firebase setup.</p>
-      </div>
-      <div className="recipe-preview-grid">
-        {recipes.map((recipe) => (
-          <article key={recipe.id}>
-            <h3>{recipe.title}</h3>
-            <p>{recipe.description}</p>
-            <Link to={`/recipes/${recipe.id}`}>Read recipe</Link>
-          </article>
-        ))}
+    <section className="recipes-strip">
+      <div className="recipes-strip__inner">
+        <p className="eyebrow eyebrow--light">Bliv inspireret</p>
+        <h2 className="recipes-strip__title">Pizzaopskrifter</h2>
+        <div className="recipes-strip__grid">
+          {recipes.map((recipe) => (
+            <Link key={recipe.id} to={`/recipes/${recipe.id}`} className="recipes-strip__item">
+              {recipe.name}
+            </Link>
+          ))}
+        </div>
+        <Link to="/recipes" className="btn btn--outline-light recipes-strip__cta">
+          Se alle opskrifter
+        </Link>
       </div>
     </section>
   )

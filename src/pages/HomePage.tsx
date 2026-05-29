@@ -1,4 +1,8 @@
 import "./HomePage.css";
+import HeroSection from '../components/home/HeroSection'
+import FeaturesSection from '../components/home/FeaturesSection'
+import FeaturedProductsSection from '../components/home/FeaturedProductsSection'
+import RecipesSection from '../components/home/RecipesSection'
 
 export default function HomePage() {
   return (
@@ -29,87 +33,16 @@ export default function HomePage() {
       </div>
 
       {/* HERO */}
-      <div className="hero">
-        <img
-          src="/assets/Images/Pizza-ovn.png"
-          alt="Pizzaovne"
-        />
-      </div>
+      <HeroSection />
 
       {/* FEATURE BAR */}
-      <div className="features">
-        <div className="container feature-inner">
-
-          <div className="feature">
-            <strong>FRI FRAGT TIL PAKKESHOP</strong>
-            <span>ALLE ORDRER OVER 499 DKK</span>
-          </div>
-
-          <div className="feature">
-            <strong>KUNDESERVICE 8-17</strong>
-            <span>ALLE HVERDAGE</span>
-          </div>
-
-          <div className="feature">
-            <strong>STORT UDVALG</strong>
-            <span>RÅVARER & GEAR</span>
-          </div>
-
-        </div>
-      </div>
+      <FeaturesSection />
 
       {/* PRODUCTS */}
-      <div className="container products">
-        <h2>POPULÆRE PRODUKTER</h2>
-
-        <div className="product-grid">
-
-          <div className="product">
-            <img src="/assets/Images/fiordilatte.png" />
-            <p className="title">FIOR DI LATTE</p>
-            <p>Latteria Sorrentina</p>
-            <p className="price">219,00 KR.</p>
-          </div>
-
-          <div className="product">
-            <img src="/assets/Images/mel.webp" />
-            <p className="title">NUVOLA SUPER</p>
-            <p>Caputo</p>
-            <p className="price">129,00 KR.</p>
-          </div>
-
-          <div className="product">
-            <img src="/assets/Images/tomater.jpg" />
-            <p className="title">SAN MARZANO</p>
-            <p>Solania</p>
-            <p className="price">FRA 29,00 KR.</p>
-          </div>
-
-          <div className="product">
-            <img src="/assets/Images/pizzaspade.jpg" />
-            <p className="title">PIZZASPADE</p>
-            <p>Enzo</p>
-            <p className="price">FRA 429,00 KR.</p>
-          </div>
-
-        </div>
-      </div>
+      <FeaturedProductsSection />
 
       {/* RECIPES */}
-      <div className="container recipes">
-        <h2>PIZZAOPSKRIFTER</h2>
-        <div className="divider"></div>
-
-        <div className="recipe-grid">
-          <span>MARINARA</span>
-          <span>QUATTRO FORMAGGI</span>
-          <span>DIAVOLA</span>
-
-          <span>CAPRICCIOSA</span>
-          <span>SALSICCIA E FRIARIELLI</span>
-          <span>MARGARITA</span>
-        </div>
-      </div>
+      <RecipesSection />
 
       {/* FOOTER */}
       <div className="footer">
