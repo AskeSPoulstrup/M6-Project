@@ -23,22 +23,24 @@ export function CartProvider({ children }: CartProviderProps) {
       itemCount,
       subtotal,
       addToCart: (product, quantity = 1) => {
-        setItems((currentItems) => {
-          const existingItem = currentItems.find((item) => item.product.id === product.id)
-
-          if (existingItem) {
-            return currentItems.map((item) =>
-              item.product.id === product.id
-                ? { ...item, quantity: item.quantity + quantity }
-                : item,
+        setItems((cur) => {
+          const existing = cur.find((i) => i.product.id === product.id)
+          if (existing) {
+            return cur.map((i) =>
+              i.product.id === product.id ? { ...i, quantity: i.quantity + quantity } : i,
             )
           }
-
-          return [...currentItems, { product, quantity }]
+          return [...cur, { product, quantity }]
         })
       },
+      updateQuantity: (productId, quantity) => {
+        if (quantity < 1) return
+        setItems((cur) =>
+          cur.map((i) => (i.product.id === productId ? { ...i, quantity } : i)),
+        )
+      },
       removeFromCart: (productId) => {
-        setItems((currentItems) => currentItems.filter((item) => item.product.id !== productId))
+        setItems((cur) => cur.filter((i) => i.product.id !== productId))
       },
       clearCart: () => {
         setItems([])
