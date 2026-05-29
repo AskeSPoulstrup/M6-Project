@@ -31,7 +31,7 @@ export default function HomePage() {
       {/* HERO */}
       <div className="hero">
         <img
-          src="https://images.unsplash.com/photo-1556909212-d5b604d0fa4d"
+          src="/assets/Images/Pizza-ovn.png"
           alt="Pizzaovne"
         />
       </div>
@@ -65,28 +65,28 @@ export default function HomePage() {
         <div className="product-grid">
 
           <div className="product">
-            <img src="https://via.placeholder.com/200" />
+            <img src="/assets/Images/fiordilatte.png" />
             <p className="title">FIOR DI LATTE</p>
             <p>Latteria Sorrentina</p>
             <p className="price">219,00 KR.</p>
           </div>
 
           <div className="product">
-            <img src="https://via.placeholder.com/200" />
+            <img src="/assets/Images/mel.webp" />
             <p className="title">NUVOLA SUPER</p>
             <p>Caputo</p>
             <p className="price">129,00 KR.</p>
           </div>
 
           <div className="product">
-            <img src="https://via.placeholder.com/200" />
+            <img src="/assets/Images/tomater.jpg" />
             <p className="title">SAN MARZANO</p>
             <p>Solania</p>
             <p className="price">FRA 29,00 KR.</p>
           </div>
 
           <div className="product">
-            <img src="https://via.placeholder.com/200" />
+            <img src="/assets/Images/pizzaspade.jpg" />
             <p className="title">PIZZASPADE</p>
             <p>Enzo</p>
             <p className="price">FRA 429,00 KR.</p>
