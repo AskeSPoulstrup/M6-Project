@@ -2,10 +2,10 @@ import { Link, NavLink } from 'react-router-dom'
 import CartIcon from '../cart/CartIcon'
 
 const navItems = [
-  { to: '/products', label: 'Products' },
-  { to: '/recipes', label: 'Recipes' },
-  { to: '/about', label: 'About' },
-  { to: '/contact', label: 'Contact' },
+  { to: '/products', label: 'Shop' },
+  { to: '/recipes', label: 'Opskrifter' },
+  { to: '/about', label: 'Om Os' },
+  { to: '/contact', label: 'Kontakt' },
 ]
 
 export default function Navbar() {
@@ -14,7 +14,7 @@ export default function Navbar() {
       <Link to="/" className="navbar__brand">
         Slice-Management
       </Link>
-      <nav className="navbar__links" aria-label="Primary navigation">
+      <nav className="navbar__links" aria-label="Primaer navigation">
         {navItems.map((item) => (
           <NavLink
             key={item.to}

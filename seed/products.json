@@ -11,7 +11,8 @@
     "inStock": true,
     "stockQuantity": 24,
     "unit": "1 kg",
-    "brand": "Caputo"
+    "brand": "Caputo",
+    "featured": true
   },
   {
     "name": "San Marzano tomater",
@@ -25,7 +26,8 @@
     "inStock": true,
     "stockQuantity": 42,
     "unit": "400 g",
-    "brand": "Mutti"
+    "brand": "Mutti",
+    "featured": true
   },
   {
     "name": "Fior di Latte mozzarella",
@@ -39,7 +41,8 @@
     "inStock": true,
     "stockQuantity": 18,
     "unit": "250 g",
-    "brand": "Galbani"
+    "brand": "Galbani",
+    "featured": true
   },
   {
     "name": "Tørgær",
@@ -67,7 +70,8 @@
     "inStock": true,
     "stockQuantity": 8,
     "unit": "1 stk",
-    "brand": "Limet"
+    "brand": "Limet",
+    "featured": true
   },
   {
     "name": "Pizzaspade aluminium",
