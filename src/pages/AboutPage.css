@@ -1,0 +1,91 @@
+.about-page {
+  position: relative;
+  padding: 72px 24px 64px;
+  background: linear-gradient(180deg, #f2efe3 0%, #faf6ee 100%);
+  color: #1e2a1f;
+  min-height: calc(100vh - 80px);
+}
+
+.about-page::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 120px;
+  background: #7e9c7f;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+  z-index: -1;
+}
+
+.about-page .section-title {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 32px;
+  padding-top: 16px;
+}
+
+.about-page .section-title h2 {
+  margin: 0 0 12px;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.about-page .section-title p {
+  margin: 0;
+  color: #3f4a3e;
+  font-size: 1rem;
+}
+
+.about-page p {
+  max-width: 760px;
+  margin: 0 auto;
+  line-height: 1.85;
+  color: #33332f;
+}
+
+.about-page .about-team {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  width: min(100%, 1080px);
+  margin: 32px auto;
+}
+
+.about-page .about-team article {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(30, 42, 31, 0.12);
+  border-radius: 28px;
+  padding: 32px 28px;
+  box-shadow: 0 24px 40px rgba(38, 55, 44, 0.08);
+}
+
+.about-page .about-team h3 {
+  margin: 0 0 16px;
+  font-size: 1.25rem;
+  color: #172215;
+}
+
+.about-page .about-team p {
+  margin: 0;
+  color: #4a4a42;
+}
+
+@media (max-width: 900px) {
+  .about-page {
+    padding: 56px 18px 48px;
+  }
+
+  .about-page .about-team {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-page {
+    padding: 48px 16px 36px;
+  }
+
+  .about-page .section-title h2 {
+    font-size: 2.4rem;
+  }
+}
