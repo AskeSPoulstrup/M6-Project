@@ -50,21 +50,21 @@ export default function RecipeDetailPage() {
 
       <div className="recipe-detail__body">
         <section className="recipe-detail__section">
+          <h2>Fremgangsmåde</h2>
+          <ol className="recipe-detail__steps">
+            {recipe.instructions.map((step, i) => (
+              <li key={i}>{step}</li>
+            ))}
+          </ol>
+        </section>
+
+        <section className="recipe-detail__section">
           <h2>Ingredienser</h2>
           <ul className="recipe-detail__ingredients">
             {recipe.ingredients.map((ing, i) => (
               <li key={i}>{ing}</li>
             ))}
           </ul>
-        </section>
-
-        <section className="recipe-detail__section">
-          <h2>Fremgangsmaade</h2>
-          <ol className="recipe-detail__steps">
-            {recipe.instructions.map((step, i) => (
-              <li key={i}>{step}</li>
-            ))}
-          </ol>
         </section>
       </div>
     </article>
