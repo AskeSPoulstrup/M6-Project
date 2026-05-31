@@ -34,7 +34,7 @@ export default function CheckoutPage() {
     return (
       <section className="checkout-page">
         <h1>Checkout</h1>
-        <p>Din kurv er tom. <Link to="/products">Gaa til shop</Link></p>
+        <p>Din kurv er tom. <Link to="/products">Gå til shop</Link></p>
       </section>
     )
   }

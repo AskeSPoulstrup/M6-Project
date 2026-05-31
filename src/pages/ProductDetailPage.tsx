@@ -73,7 +73,7 @@ export default function ProductDetailPage() {
           <p className="product-detail__description">{product.description}</p>
 
           {product.inStock === false ? (
-            <p className="product-detail__oos">Ikke paa lager</p>
+            <p className="product-detail__oos">Ikke på lager</p>
           ) : (
             <div className="product-detail__actions">
               <div className="qty-control">
@@ -88,7 +88,7 @@ export default function ProductDetailPage() {
                 <button
                   className="qty-control__btn"
                   onClick={() => setQuantity((q) => q + 1)}
-                  aria-label="Oeg antal"
+                  aria-label="Øg antal"
                 >
                   +
                 </button>
@@ -97,7 +97,7 @@ export default function ProductDetailPage() {
                 className={`btn btn--primary${added ? ' btn--success' : ''}`}
                 onClick={handleAddToCart}
               >
-                {added ? 'Lagt i kurv' : 'Laeg i kurv'}
+                {added ? 'Lagt i kurv' : 'Læg i kurv'}
               </button>
             </div>
           )}

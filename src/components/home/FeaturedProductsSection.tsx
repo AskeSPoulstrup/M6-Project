@@ -38,7 +38,7 @@ export default function FeaturedProductsSection() {
     <section className="home-section">
       <div className="home-section__header">
         <p className="eyebrow">Udvalgte produkter</p>
-        <h2>Populaere produkter</h2>
+        <h2>Populære produkter</h2>
         <Link to="/products" className="home-section__link">Se alle produkter</Link>
       </div>
       <div className="product-list">

@@ -6,9 +6,9 @@ const ALL_CATEGORY = 'alle'
 
 const CATEGORY_LABELS: Record<string, string> = {
   alle: 'Alle',
-  raavarer: 'Raavarer',
+  raavarer: 'Råvarer',
   udstyr: 'Udstyr',
-  tilbehoer: 'Tilbehoer',
+  tilbehoer: 'Tilbehør',
 }
 
 export default function ProductsPage() {
@@ -30,7 +30,7 @@ export default function ProductsPage() {
       <div className="catalog-hero">
         <div>
           <p className="eyebrow">Shop</p>
-          <h1>Raavarer, udstyr og gear til pizzanoerder</h1>
+          <h1>Råvarer, udstyr og gear til pizzanørder</h1>
           <p>
             Alt hvad du har brug for til at bage den perfekte pizza derhjemme.
             Fra tipo 00 mel og San Marzano tomater til professionelle pizzasten og spader.

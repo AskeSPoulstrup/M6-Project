@@ -7,9 +7,9 @@ export default function Footer() {
         <div className="footer__col">
           <p className="footer__brand">Slice-Management</p>
           <p className="footer__tagline">
-            Raavarer, udstyr og opskrifter til pizzanoerder der tager det seriost.
+            Råvarer, udstyr og opskrifter til pizzanørder der tager det seriøst.
           </p>
-          <p className="footer__address">Pizzagade 12 &middot; 2100 Koebenhavn Oe</p>
+          <p className="footer__address">Pizzagade 12 &middot; 9000 Aalborg</p>
         </div>
         <div className="footer__col">
           <p className="footer__col-title">Kundeservice</p>
@@ -24,7 +24,7 @@ export default function Footer() {
           <nav aria-label="Info navigation">
             <Link to="/about">Om os</Link>
             <a href="mailto:info@slice-management.dk">info@slice-management.dk</a>
-            <a href="tel:+4570201010">+45 70 20 10 10</a>
+            <a href="tel:+4512345678">+45 12 34 56 78</a>
           </nav>
         </div>
       </div>
