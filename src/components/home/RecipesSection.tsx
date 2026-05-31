@@ -25,7 +25,7 @@ export default function RecipesSection() {
         <div className="recipes-strip__grid">
           {recipes.map((recipe) => (
             <Link key={recipe.id} to={`/recipes/${recipe.id}`} className="recipes-strip__item">
-              {recipe.name}
+              {recipe.title}
             </Link>
           ))}
         </div>
