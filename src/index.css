@@ -1237,7 +1237,6 @@ img {
 /* ===== RECIPE DETAIL ===== */
 .recipe-detail {
   padding-top: 32px;
-  max-width: 780px;
 }
 
 .recipe-detail__header {
@@ -1283,7 +1282,9 @@ img {
 
 .recipe-detail__body {
   display: grid;
-  gap: 40px;
+  grid-template-columns: 1fr 320px;
+  gap: 64px;
+  align-items: start;
 }
 
 .recipe-detail__section h2 {
@@ -1428,6 +1429,10 @@ img {
 @media (max-width: 1024px) {
   .page-content {
     width: min(1180px, calc(100% - 24px));
+  }
+
+  .recipe-detail__body {
+    grid-template-columns: 1fr;
   }
 
   .navbar {

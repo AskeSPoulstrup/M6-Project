@@ -18,7 +18,7 @@ export default function ConfirmationPage() {
     return (
       <section className="confirmation-page">
         <h1>Ingen ordredata</h1>
-        <p>Gaa til <Link to="/products">shoppen</Link> for at handle.</p>
+        <p>gå til <Link to="/products">shoppen</Link> for at handle.</p>
       </section>
     )
   }
@@ -73,7 +73,7 @@ export default function ConfirmationPage() {
       </div>
 
       <Link to="/products" className="btn btn--primary confirmation-page__cta">
-        Forsaet med at handle
+        Fortæt med at handle
       </Link>
     </section>
   )

@@ -34,21 +34,21 @@ export default function CheckoutPage() {
     return (
       <section className="checkout-page">
         <h1>Checkout</h1>
-        <p>Din kurv er tom. <Link to="/products">Gaa til shop</Link></p>
+        <p>Din kurv er tom. <Link to="/products">Gå til shop</Link></p>
       </section>
     )
   }
 
   function validate(): boolean {
     const e: FieldErrors = {}
-    if (!form.firstName.trim()) e.firstName = 'Fornavn er paakraevet'
-    if (!form.lastName.trim()) e.lastName = 'Efternavn er paakraevet'
+    if (!form.firstName.trim()) e.firstName = 'Fornavn er påkrævet'
+    if (!form.lastName.trim()) e.lastName = 'Efternavn er påkrævet'
     if (!form.email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
       e.email = 'Ugyldig e-mailadresse'
     }
-    if (!form.address?.trim()) e.address = 'Adresse er paakraevet'
-    if (!form.city?.trim()) e.city = 'By er paakraevet'
-    if (!form.postalCode?.trim()) e.postalCode = 'Postnummer er paakraevet'
+    if (!form.address?.trim()) e.address = 'Adresse er påkrævet'
+    if (!form.city?.trim()) e.city = 'By er påkrævet'
+    if (!form.postalCode?.trim()) e.postalCode = 'Postnummer er påkrævet'
     setErrors(e)
     return Object.keys(e).length === 0
   }
@@ -76,7 +76,7 @@ export default function CheckoutPage() {
       clearCart()
       navigate('/confirmation', { state: { orderId, customer, items, total } })
     } catch {
-      alert('Der opstod en fejl. Proev igen.')
+      alert('Der opstod en fejl. Prøv igen.')
     } finally {
       setSubmitting(false)
     }
