@@ -57,7 +57,10 @@ export async function getFeaturedProducts(): Promise<Product[]> {
   if (!isFirebaseConfigured || !db) return []
   const q = query(collection(db, 'products'), where('featured', '==', true))
   const snapshot = await getDocs(q)
-  return snapshot.docs.map((e) => normalizeProduct(e.id, e.data() as ProductDocument))
+  const featured = snapshot.docs.map((e) => normalizeProduct(e.id, e.data() as ProductDocument))
+  if (featured.length > 0) return featured
+  const allSnapshot = await getDocs(collection(db, 'products'))
+  return allSnapshot.docs.slice(0, 4).map((e) => normalizeProduct(e.id, e.data() as ProductDocument))
 }
 
 export async function getProductById(id: string): Promise<Product | null> {
