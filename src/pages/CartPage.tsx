@@ -12,7 +12,7 @@ export default function CartPage() {
         <div className="cart-empty">
           <p className="cart-empty__icon" aria-hidden="true">🛒</p>
           <p>Din kurv er tom.</p>
-          <Link to="/products" className="btn btn--primary">Gaa til shop</Link>
+          <Link to="/products" className="btn btn--primary">Gå til shop</Link>
         </div>
       </section>
     )
@@ -89,7 +89,7 @@ export default function CartPage() {
           </div>
           {shipping > 0 && (
             <p className="cart-summary__shipping-note">
-              Tilfoej {formatPrice(599 - subtotal)} mere for gratis fragt
+              Tilføj {formatPrice(599 - subtotal)} mere for gratis fragt
             </p>
           )}
           <div className="cart-summary__row cart-summary__row--total">
@@ -97,9 +97,9 @@ export default function CartPage() {
             <span>{formatPrice(total)}</span>
           </div>
           <Link to="/checkout" className="btn btn--primary cart-summary__cta">
-            Gaa til betaling
+            Gå til betaling
           </Link>
-          <Link to="/products" className="cart-summary__continue">Fortsaet med at handle</Link>
+          <Link to="/products" className="cart-summary__continue">Fortsæt med at handle</Link>
         </aside>
       </div>
     </section>

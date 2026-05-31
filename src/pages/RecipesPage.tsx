@@ -8,7 +8,7 @@ export default function RecipesPage() {
     <section className="recipes-page">
       <div className="catalog-hero">
         <p className="eyebrow">Opskrifter</p>
-        <h1>Pizzaopskrifter til noerder</h1>
+        <h1>Pizzaopskrifter til nørder</h1>
         <p>
           Fra den klassiske napolitanske Margherita til den fyldige Quattro Formaggi
           - her finder du opskrifter der hjaelper dig til at bage bedre pizza derhjemme.

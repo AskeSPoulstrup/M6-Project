@@ -9,12 +9,12 @@ export default function HeroSection() {
         <div className="hero-section__overlay" />
       </div>
       <div className="hero-section__content">
-        <p className="hero-section__eyebrow">Pizzaudstyr &amp; raavarer</p>
+        <p className="hero-section__eyebrow">Pizzaudstyr &amp; råvarer</p>
         <h1 className="hero-section__title">
-          Alt hvad du behoever<br />til den perfekte pizza.
+          Alt hvad du behøver<br />til den perfekte pizza.
         </h1>
         <p className="hero-section__subtitle">
-          Professionelle raavarer og vaerktoej til hjemmebageren der tager pizzaen seriost.
+          Professionelle råvarer og værktøj til hjemmebageren der tager pizzaen seriøst.
         </p>
         <div className="hero-section__actions">
           <Link to="/products" className="btn btn--primary">Se produkter</Link>

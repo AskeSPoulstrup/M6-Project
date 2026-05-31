@@ -5,8 +5,8 @@ export default function ContactPage() {
         <p className="eyebrow">Kontakt</p>
         <h1>Kontakt os</h1>
         <p>
-          Vi er klar til at hjaelpe dig med spoergsmaal om produkter, ordrer og levering.
-          Skriv til os eller ring - vi svarer inden for 24 timer paa hverdage.
+          Vi er klar til at hjælpe dig med spørgsmål om produkter, ordrer og levering.
+          Skriv til os eller ring - vi svarer inden for 24 timer på hverdage.
         </p>
       </div>
 
@@ -15,7 +15,7 @@ export default function ContactPage() {
           <p className="contact-card__icon" aria-hidden="true">📍</p>
           <h2>Adresse</h2>
           <p>Pizzagade 12</p>
-          <p>2100 Koebenhavn Oe</p>
+          <p>9000 Aalborg</p>
           <p>Danmark</p>
         </div>
 
@@ -32,7 +32,7 @@ export default function ContactPage() {
           <p className="contact-card__icon" aria-hidden="true">📞</p>
           <h2>Telefon</h2>
           <p>
-            <a href="tel:+4570201010">+45 70 20 10 10</a>
+            <a href="tel:+4512345678">+45 12 34 56 78</a>
           </p>
           <p className="contact-card__note">Mandag-fredag 8-17</p>
         </div>
